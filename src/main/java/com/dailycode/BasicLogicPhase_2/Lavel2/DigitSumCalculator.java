@@ -1,0 +1,17 @@
+package com.dailycode.BasicLogicPhase_2.Lavel2;
+
+import java.util.Scanner;
+
+public class DigitSumCalculator {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int num=in.nextInt();
+        int sum=0;
+        while (num>0){
+            int digit=num%10;
+            sum+=digit;
+            num=num/10;
+        }
+        System.out.println(sum);
+    }
+}
