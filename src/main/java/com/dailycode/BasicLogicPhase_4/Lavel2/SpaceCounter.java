@@ -14,6 +14,9 @@ public class SpaceCounter {
                 count++;
             }
         }
+
+        long c=str.chars().filter(ch->ch==' ').count();
+        System.out.println(c);
         System.out.println(count);
     }
 }
